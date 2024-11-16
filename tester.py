@@ -1,11 +1,4 @@
-# geo/tester.py
-import sys
-import os
-
-# 현재 스크립트의 상위 경로를 Python 경로에 추가
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-from utils import calculate_area
+from geo.utils import calculate_area
 
 def test_functionality():
     print("Testing calculate_area function...")
