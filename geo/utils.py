@@ -1,7 +1,7 @@
 import math
 
 def pythagoras(a, b):
-  c = math.sqrt(a2 + b2)
+  c = math.sqrt(a**2 + b**2)
   return c
 
 def circle(r):
