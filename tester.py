@@ -1,13 +1,21 @@
-from geo.utils import calculate_area
+import geo.utils as utils
+all = ['pythagoras' , 'circle']
+import math
 
-def test_functionality():
-    print("Testing calculate_area function...")
-    try:
-        print("Circle:", calculate_area("circle", radius=5))  # Expected: 78.54
-        print("Rectangle:", calculate_area("rectangle", width=4, height=6))  # Expected: 24
-        print("Triangle:", calculate_area("triangle", base=3, height=7))  # Expected: 10.5
-    except Exception as e:
-        print("Error:", e)
+def pythagoras(a, b):
+  c = math.sqrt(a2 + b2)
+  return c
 
-if __name__ == "__main__":
-    test_functionality()
+def circle(r):
+  area = math.pi * r**2
+  return area
+
+calculate the length of hypotenuse(c) a = 3 & b = 4
+a, b = 3, 4
+c = utils.pythagoras(a, b)
+print('c =', c)
+
+calculate the area of circle with radius r = 10
+r = 10
+area = utils.circle(r)
+print('area =', area)
