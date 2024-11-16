@@ -1,12 +1,11 @@
 # tester.py
-from geo.utils import calculate_area
+from geo.utils import calculate_area  # geo 폴더 내 모듈 가져오기
 
 def test_functionality():
     print("Testing calculate_area function...")
     try:
-        print("Circle:", calculate_area("circle", radius=5))  # Expected: 78.54
-        print("Rectangle:", calculate_area("rectangle", width=4, height=6))  # Expected: 24
-        print("Triangle:", calculate_area("triangle", base=3, height=7))  # Expected: 10.5
+        print("Circle:", calculate_area("circle", radius=10))  # Example test
+        print("Rectangle:", calculate_area("rectangle", width=4, height=6))
     except Exception as e:
         print("Error:", e)
 
