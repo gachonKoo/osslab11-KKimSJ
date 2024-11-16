@@ -1,9 +1,13 @@
-from geo.utils import as utils# geo 폴더의 utils.py에서 함수 임포트
+from geo.utils import calculate_area
 
-a,b=3,4
-c=sqrt(a**2 + b**2)
-printf('c=',c)
+def test_functionality():
+    print("Testing calculate_area function...")
+    try:
+        print("Circle:", calculate_area("circle", radius=5))  # Expected: 78.54
+        print("Rectangle:", calculate_area("rectangle", width=4, height=6))  # Expected: 24
+        print("Triangle:", calculate_area("triangle", base=3, height=7))  # Expected: 10.5
+    except Exception as e:
+        print("Error:", e)
 
-r=10
-area = pi * r**
-print('area=',area)
+if __name__ == "__main__":
+    test_functionality()
