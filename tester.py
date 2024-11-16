@@ -1,4 +1,4 @@
-from .utils import calculate_area
+from geo.utils import calculate_area
 
 def test_functionality():
     print("Testing geo package functionality...")
