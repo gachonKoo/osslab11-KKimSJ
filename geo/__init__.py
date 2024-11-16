@@ -1,2 +1,2 @@
-from .area import circle_area, rectangle_area
-from .perimeter import circle_perimeter, rectangle_perimeter
+from .utils import calculate_area
+from .tester import test_functionality
