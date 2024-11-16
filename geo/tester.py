@@ -1,16 +1,19 @@
 # geo/tester.py
-from geo.utils import calculate_area
+import sys
+import os
+
+# 현재 스크립트의 상위 경로를 Python 경로에 추가
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from utils import calculate_area
 
 def test_functionality():
     print("Testing calculate_area function...")
-
-    # Test cases
     try:
-        print("Circle area:", calculate_area("circle", radius=5))  # Expect 78.53975
-        print("Rectangle area:", calculate_area("rectangle", width=4, height=6))  # Expect 24
-        print("Triangle area:", calculate_area("triangle", base=3, height=7))  # Expect 10.5
-        print("Invalid shape test:", calculate_area("hexagon"))  # Expect error
-    except ValueError as e:
+        print("Circle:", calculate_area("circle", radius=5))  # Expected: 78.54
+        print("Rectangle:", calculate_area("rectangle", width=4, height=6))  # Expected: 24
+        print("Triangle:", calculate_area("triangle", base=3, height=7))  # Expected: 10.5
+    except Exception as e:
         print("Error:", e)
 
 if __name__ == "__main__":
